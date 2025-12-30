@@ -679,7 +679,10 @@ function initTerminalMode() {
         { type: 'variable', text: 'translation = model.generate(tokenizer.encode(text))' },
         { type: 'output', text: '>>> Traduction: "L\'expérience ne trompe jamais..."' },
         { type: 'variable', text: '' },
-        { type: 'output', text: '>>> Confiance: 94.7% | Exporté vers OAIS/DIP/' },
+        { type: 'warning', text: '⚠ WARNING: Hallucination detected in mechanical gear generation.' },
+        { type: 'warning', text: '  → Human verification required before archival validation.' },
+        { type: 'variable', text: '' },
+        { type: 'output', text: '>>> Confiance: 94.7% | 67 tokens incertains flaggés | Export OAIS/DIP/' },
     ];
 
     let terminalInitialized = false;

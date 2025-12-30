@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codex Atlanticus 2.0 — L'Esprit de Léonard à l'Ère Numérique</title>
+    <title>Codex Atlanticus 2.0 — 1,119 Feuillets. 5 Siècles d'Histoire. Une Course Contre l'Oubli.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -39,23 +39,23 @@
         <canvas class="constellation__canvas" id="constellationCanvas"></canvas>
 
         <div class="hero__content constellation__content">
-            <span class="hero__badge">Documentaire Interactif</span>
+            <span class="hero__badge">Enquête Documentaire Immersive</span>
             <h1 class="hero__title constellation__title">Codex Atlanticus 2.0</h1>
-            <p class="hero__subtitle constellation__subtitle">L'Esprit de Léonard à l'Épreuve de l'Éternité Numérique
-            </p>
+            <p class="hero__subtitle constellation__subtitle">1,119 Feuillets. 5 Siècles d'Histoire. Une Course Contre
+                l'Oubli.</p>
 
             <div style="display: flex; gap: 3rem; margin: 2rem 0;">
                 <div style="text-align: center;">
                     <div class="constellation__stat" data-count="1119">0</div>
-                    <div class="constellation__stat-label">Feuillets</div>
+                    <div class="constellation__stat-label">Feuillets Originaux</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="constellation__stat" data-count="500">0</div>
-                    <div class="constellation__stat-label">Ans d'Histoire</div>
+                    <div class="constellation__stat" data-count="40">0</div>
+                    <div class="constellation__stat-label">Ans de Vie Intellectuelle</div>
                 </div>
                 <div style="text-align: center;">
-                    <div class="constellation__stat" data-count="94">0</div>
-                    <div class="constellation__stat-label">% Précision IA</div>
+                    <div class="constellation__stat" data-count="1">0</div>
+                    <div class="constellation__stat-label">Urgence Absolue</div>
                 </div>
             </div>
 
@@ -65,7 +65,8 @@
             </button>
         </div>
 
-        <div class="constellation__hint">Bougez la souris pour interagir avec les données</div>
+        <div class="constellation__hint">Chaque point lumineux représente un folio — survolez pour révéler les
+            connexions</div>
 
         <div class="hero__scroll-indicator">
             <div class="hero__scroll-line"></div>
@@ -87,11 +88,12 @@
                 <div class="hotspot-container" id="codexHotspotContainer"
                     style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
                     <div class="hotspot-container__placeholder" data-placeholder="codex-folio-full"
-                        style="width: 60%; height: 80%;">
+                        style="width: 60%; height: 80%;"
+                        data-description="IMAGE PRINCIPALE: Folio 119r du Codex Atlanticus en haute résolution, parchemin jauni avec écriture spéculaire à l'encre sépia, croquis de machines volantes en marge, taches brunâtres de migration de mercure visibles dans le coin supérieur gauche, pliure verticale au centre">
                         <span class="placeholder-icon">📜</span>
-                        <span class="placeholder-text">IMAGE: Folio du Codex Atlanticus</span>
+                        <span class="placeholder-text">IMAGE: Folio 119r — Codex Atlanticus</span>
                         <span class="placeholder-text" style="font-size: 0.55rem; margin-top: 0.5rem; opacity: 0.6;">
-                            Cliquez sur l'image pour le Deep Zoom
+                            Cliquez pour Deep Zoom — Résolution 800 Mo
                         </span>
                     </div>
 
@@ -121,61 +123,81 @@
             <!-- Card 1: Introduction -->
             <article class="story-card" data-card="intro">
                 <span class="section__number">Chapitre I</span>
-                <h2 class="section__title">L'Héritage Fragile</h2>
-                <p class="section__subtitle">Un trésor de la Renaissance menacé par le temps</p>
+                <h2 class="section__title">L'Odyssée d'un Chaos de Génie</h2>
+                <p class="section__subtitle">Comment le plus grand trésor intellectuel de la Renaissance a failli
+                    disparaître — trois fois.</p>
             </article>
 
             <!-- Card 2: The Codex -->
             <article class="story-card" data-card="codex">
-                <h3>Le Plus Grand Recueil de Léonard</h3>
+                <h3>Le Crime du Sculpteur</h3>
                 <p>
-                    Le <strong>Codex Atlanticus</strong> représente la plus vaste et la plus ambitieuse collection
-                    de dessins et d'écrits jamais rassemblée par Léonard de Vinci. Ce nom évocateur, « Atlanticus »,
-                    ne fait pas référence à l'océan mythique, mais au format « atlas » — les grandes dimensions
-                    des feuillets qui composent ce recueil monumental.
+                    Ce que vous voyez n'est <strong>pas</strong> l'œuvre de Léonard. C'est le massacre organisé
+                    par <strong>Pompeo Leoni</strong>, sculpteur de la cour d'Espagne. En 1590, obsédé par l'idée
+                    de créer un « monument » au génie, Leoni a découpé, collé, et réorganisé des dizaines de
+                    carnets originaux pour les faire tenir dans un format « atlas » gigantesque.
+                </p>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--accent-gold);">
+                    Il a détruit la chronologie. Fragmenté les idées. Séparé des dessins conçus ensemble.
+                    Le « Codex Atlanticus » est un <strong>Frankenstein de papier</strong>.
                 </p>
                 <div class="story-card__stat">
                     <span class="story-card__stat-number">1,119</span>
-                    <span class="story-card__stat-label">Feuillets</span>
+                    <span class="story-card__stat-label">Feuillets Mutilés</span>
                 </div>
             </article>
 
             <!-- Card 3: The Collection -->
             <article class="story-card" data-card="collection">
-                <h3>La Biblioteca Ambrosiana</h3>
+                <h3>Le Vol de Napoléon</h3>
                 <p>
-                    Conservé précieusement à la <strong>Biblioteca Ambrosiana de Milan</strong> depuis 1637,
-                    ce manuscrit extraordinaire rassemble près de quarante années de la vie intellectuelle
-                    du maître — de 1478 à 1519. Chaque page est une fenêtre ouverte sur un esprit en
-                    perpétuelle ébullition.
+                    <strong>Mai 1796.</strong> Les troupes de Bonaparte entrent dans Milan. Parmi le butin de guerre :
+                    le Codex Atlanticus. Pendant <strong>19 ans</strong>, le manuscrit restera à Paris,
+                    exposé à la Bibliothèque Nationale comme un trophée impérial.
                 </p>
-                <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
-                    Machines volantes, études anatomiques, réflexions sur l'hydraulique,
-                    croquis d'architecture visionnaire...
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--accent-gold);">
+                    Ce n'est qu'en 1815, après Waterloo, que l'Autriche exigera sa restitution.
+                    Le Codex a failli ne jamais revenir. Si Napoléon avait gagné, où serait-il aujourd'hui ?
+                </p>
+                <p style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.7; font-style: italic;">
+                    « Les empires volent les mémoires des peuples vaincus. »
                 </p>
             </article>
 
-            <!-- Card 4: Pompeo Leoni -->
+            <!-- Card 4: The Restoration Disaster -->
             <article class="story-card" data-card="leoni">
-                <h3>Le Puzzle de Pompeo Leoni</h3>
+                <h3>La Catastrophe des Années 1970</h3>
                 <p>
-                    Le sculpteur Pompeo Leoni, au XVIe siècle, fut le premier à compiler ces feuilles éparses,
-                    les découpant parfois pour les réorganiser selon sa propre logique. Cette intervention,
-                    bien qu'elle ait préservé les documents, a aussi <strong>fragmenté la pensée originelle</strong>
-                    de Léonard, créant un puzzle que les chercheurs tentent encore aujourd'hui de reconstituer.
+                    Après avoir survécu aux guerres et aux vols, le Codex a failli être détruit par...
+                    <strong>ses propres restaurateurs</strong>. Dans les années 1960-70, des moines bien intentionnés
+                    ont utilisé de la <strong>colle vinylique</strong> pour consolider les pages fragiles.
+                </p>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--accent-gold);">
+                    Quarante ans plus tard, la colle a provoqué des <strong>moisissures noires</strong> et accéléré
+                    la migration des <strong>sels de mercure</strong> présents dans certains pigments.
+                    Une « restauration » devenue poison.
+                </p>
+                <p style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.7;">
+                    👆 Cliquez sur les points lumineux pour voir les dégâts.
                 </p>
             </article>
 
             <!-- Card 5: The Danger -->
             <article class="story-card story-card--danger" data-card="danger">
-                <h3>⚠️ Le Danger Silencieux</h3>
+                <h3>⚠️ L'Urgence de Numériser</h3>
                 <p>
-                    Les encres ferro-galliques et les pigments au mercure utilisés par Léonard
-                    rongent inexorablement le papier de chiffon. L'acidité migre, les fibres se fragilisent.
+                    Ce n'est pas une métaphore : <strong>le Codex se désintègre</strong>. Les encres ferro-galliques
+                    de Léonard — un mélange de sulfate de fer et de tanins — dévorent littéralement le papier
+                    de l'intérieur. Chaque fibre se brise un peu plus chaque jour.
                 </p>
                 <p style="margin-top: 1rem; color: var(--accent-gold);">
-                    Chaque manipulation, chaque exposition à la lumière ou à l'humidité accélère
-                    une dégradation que cinq siècles n'ont fait qu'entamer. <strong>Le temps est compté.</strong>
+                    La <strong>numérisation haute résolution</strong> n'est pas un luxe technologique.
+                    C'est un acte de <strong>sauvetage archéologique</strong>. Capturer chaque détail avant
+                    qu'il ne disparaisse à jamais.
+                </p>
+                <p style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.8;">
+                    Dans 50 ans, certains folios seront peut-être illisibles.
+                    La copie numérique deviendra <strong>l'original</strong>.
                 </p>
 
                 <!-- Narration Button -->
@@ -196,61 +218,64 @@
     <!-- Hotspot Tooltips (Hidden by default) -->
     <div class="hotspot-tooltip" id="tooltip-mercury">
         <div class="hotspot-tooltip__header">
-            <h4 class="hotspot-tooltip__title">Tache de Mercure</h4>
+            <h4 class="hotspot-tooltip__title">Contamination au Mercure</h4>
             <button class="hotspot-tooltip__close">×</button>
         </div>
         <div class="hotspot-tooltip__body">
-            <div class="hotspot-tooltip__image-placeholder" data-placeholder="mercury-detail">
-                <span class="placeholder-icon" style="font-size: 1.5rem;">🔍</span>
-                <span class="placeholder-text" style="font-size: 0.6rem;">IMAGE: Détail tache mercure</span>
+            <div class="hotspot-tooltip__image-placeholder" data-placeholder="mercury-detail"
+                data-description="IMAGE: Macro-photographie des taches brunâtres sur parchemin jauni, traces de migration chimique, textures craquelées">
+                <span class="placeholder-icon" style="font-size: 1.5rem;">☠️</span>
+                <span class="placeholder-text" style="font-size: 0.6rem;">IMAGE: Migration des sels de mercure</span>
             </div>
             <p class="hotspot-tooltip__text">
-                Les pigments au cinabre (sulfure de mercure) utilisés par Léonard pour certains
-                dessins réagissent chimiquement avec le papier. Cette oxydation progressive
-                crée des auréoles brunâtres qui s'étendent lentement, menaçant d'effacer
-                les traits du maître.
+                <strong>L'ironie tragique :</strong> La « restauration » des années 1970 a accéléré la catastrophe.
+                La colle vinylique appliquée par les moines a créé un environnement humide idéal pour la
+                <strong>migration des sels de mercure</strong> présents dans les pigments rouges de Léonard.
+                Ces auréoles brunâtres s'étendent de 0.2mm par an. Irréversible.
             </p>
-            <p class="hotspot-tooltip__meta">Zone critique — Conservation prioritaire</p>
+            <p class="hotspot-tooltip__meta">⚠️ Zone toxique — Manipulation avec gants obligatoire</p>
         </div>
     </div>
 
     <div class="hotspot-tooltip" id="tooltip-fold">
         <div class="hotspot-tooltip__header">
-            <h4 class="hotspot-tooltip__title">Pliure Historique</h4>
+            <h4 class="hotspot-tooltip__title">Cicatrice de Leoni</h4>
             <button class="hotspot-tooltip__close">×</button>
         </div>
         <div class="hotspot-tooltip__body">
-            <div class="hotspot-tooltip__image-placeholder" data-placeholder="fold-detail">
-                <span class="placeholder-icon" style="font-size: 1.5rem;">🔍</span>
-                <span class="placeholder-text" style="font-size: 0.6rem;">IMAGE: Détail pliure</span>
+            <div class="hotspot-tooltip__image-placeholder" data-placeholder="fold-detail"
+                data-description="IMAGE: Gros plan sur pliure cassée, fibres de papier visibles, traces de colle ancienne brunies">
+                <span class="placeholder-icon" style="font-size: 1.5rem;">✂️</span>
+                <span class="placeholder-text" style="font-size: 0.6rem;">IMAGE: Pliure forcée du XVIe siècle</span>
             </div>
             <p class="hotspot-tooltip__text">
-                Cette pliure date probablement du XVIe siècle, lorsque Pompeo Leoni
-                réorganisa les feuillets. Les fibres du papier, fragilisées par des
-                siècles de tension, menacent de se rompre à chaque consultation.
-                La numérisation permet d'éviter toute manipulation future.
+                Cette pliure n'est pas un accident. C'est la marque du <strong>découpage brutal</strong>
+                opéré par Pompeo Leoni en 1590. Pour faire entrer ce feuillet dans son « atlas »,
+                il a plié de force un document qui n'était pas prévu pour ça.
+                Les fibres, stressées depuis 400 ans, sont au bord de la rupture.
             </p>
-            <p class="hotspot-tooltip__meta">Fragilité structurelle — Manipulation interdite</p>
+            <p class="hotspot-tooltip__meta">🚫 Consultation physique interdite depuis 2009</p>
         </div>
     </div>
 
     <div class="hotspot-tooltip" id="tooltip-writing">
         <div class="hotspot-tooltip__header">
-            <h4 class="hotspot-tooltip__title">Écriture Spéculaire</h4>
+            <h4 class="hotspot-tooltip__title">Le Code de Léonard</h4>
             <button class="hotspot-tooltip__close">×</button>
         </div>
         <div class="hotspot-tooltip__body">
-            <div class="hotspot-tooltip__image-placeholder" data-placeholder="mirror-writing-detail">
-                <span class="placeholder-icon" style="font-size: 1.5rem;">🔍</span>
-                <span class="placeholder-text" style="font-size: 0.6rem;">IMAGE: Écriture miroir</span>
+            <div class="hotspot-tooltip__image-placeholder" data-placeholder="mirror-writing-detail"
+                data-description="IMAGE: Écriture manuscrite inversée, encre sépia sur parchemin, lettres en miroir avec abréviations médiévales">
+                <span class="placeholder-icon" style="font-size: 1.5rem;">🪞</span>
+                <span class="placeholder-text" style="font-size: 0.6rem;">IMAGE: Écriture spéculaire originale</span>
             </div>
             <p class="hotspot-tooltip__text">
-                Léonard écrivait de droite à gauche, en miroir — peut-être parce qu'il
-                était gaucher, peut-être pour protéger ses idées des regards indiscrets.
-                Cette particularité, longtemps un obstacle à l'étude, devient aujourd'hui
-                un défi parfait pour l'intelligence artificielle.
+                Léonard écrivait <strong>de droite à gauche</strong>, en miroir. Pourquoi ?
+                Était-ce parce qu'il était gaucher et évitait ainsi de tacher l'encre ?
+                Ou un <strong>cryptage volontaire</strong> pour protéger ses idées de l'Inquisition ?
+                Pendant 500 ans, cette écriture a ralenti la recherche. Aujourd'hui, l'IA la déchiffre en millisecondes.
             </p>
-            <p class="hotspot-tooltip__meta">Candidat idéal pour traduction IA</p>
+            <p class="hotspot-tooltip__meta">🤖 Traitement IA : 94% de précision</p>
         </div>
     </div>
 
@@ -259,35 +284,41 @@
         <div class="section__container">
             <header class="section__header reveal">
                 <span class="section__number">Chapitre II</span>
-                <h2 class="section__title">La Forteresse Numérique</h2>
-                <p class="section__subtitle">OAIS : Le Standard International de Préservation</p>
+                <h2 class="section__title">L'Architecture de l'Éternité</h2>
+                <p class="section__subtitle">OAIS (ISO 14721) : Le Bunker Numérique qui Défie le Temps</p>
             </header>
 
             <div class="oais__intro reveal">
                 <p>
-                    Comment garantir qu'un fichier numérique restera lisible dans 100 ans ? Dans 500 ans ?
-                    Cette question, apparemment simple, est au cœur de l'archivistique moderne. Le modèle
-                    <strong>OAIS</strong> (Open Archival Information System), devenu la norme internationale
-                    <strong>ISO 14721</strong>, apporte une réponse architecturale rigoureuse à ce défi civilisationnel.
+                    Comment garantir qu'un fichier numérique restera lisible dans <strong>100 ans</strong> ?
+                    Dans <strong>500 ans</strong> ? Quand les logiciels actuels seront aussi obsolètes que
+                    les machines à écrire ? Cette question existentielle a conduit les ingénieurs de la NASA
+                    à créer le modèle <strong>OAIS</strong> (Open Archival Information System) — initialement
+                    pour préserver les données des sondes spatiales Voyager.
+                </p>
+                <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.85;">
+                    Aujourd'hui, cette norme <strong>ISO 14721</strong> protège le Codex Atlanticus.
+                    Même logique : préserver l'information pour des générations qui utiliseront
+                    des technologies que nous ne pouvons même pas imaginer.
                 </p>
             </div>
 
             <!-- Interactive OAIS Simulation -->
             <div class="oais-simulation reveal" id="oaisSimulation">
                 <div class="oais-simulation__instruction">
-                    👆 Glissez le manuscrit vers l'archive pour simuler le processus OAIS
+                    � Glissez le manuscrit brut vers le coffre-fort pour simuler l'archivage OAIS
                 </div>
 
                 <div class="oais-simulation__zones">
                     <!-- Source: SIP -->
                     <div class="oais-simulation__source" id="sipZone">
                         <div class="draggable-manuscript" id="draggableManuscript" draggable="true">
-                            <span class="draggable-manuscript__icon">📜</span>
-                            <span class="draggable-manuscript__label">Folio 1033r</span>
+                            <span class="draggable-manuscript__icon">�</span>
+                            <span class="draggable-manuscript__label">TIFF 800MB</span>
                         </div>
                         <div style="margin-top: 1rem; text-align: center;">
                             <div class="oais__acronym" style="font-size: 1.2rem;">SIP</div>
-                            <div style="font-size: 0.65rem; color: var(--text-muted);">Submission Package</div>
+                            <div style="font-size: 0.65rem; color: var(--text-muted);">Le Brut — Donnée Sauvage</div>
                         </div>
                     </div>
 
@@ -296,9 +327,9 @@
 
                     <!-- Target: AIP Archive -->
                     <div class="drop-zone" id="aipDropZone">
-                        <span class="drop-zone__icon">🔐</span>
-                        <span class="drop-zone__label">Archive AIP</span>
-                        <span class="drop-zone__status">En attente...</span>
+                        <span class="drop-zone__icon">🏦</span>
+                        <span class="drop-zone__label">Coffre AIP</span>
+                        <span class="drop-zone__status">Le Bunker Attend...</span>
 
                         <!-- Processing Animation (hidden by default) -->
                         <div class="processing-animation" id="processingAnimation">
@@ -318,10 +349,13 @@
                 <div id="oaisResultMessage"
                     style="text-align: center; margin-top: 2rem; opacity: 0; transition: opacity 0.5s;">
                     <p style="color: #27ca40; font-family: var(--font-mono); font-size: 0.85rem;">
-                        ✓ Document archivé avec succès ! Métadonnées générées, format pérenne (TIFF) créé.
+                        ✓ ARCHIVAGE RÉUSSI — Métadonnées XML injectées (provenance, checksums SHA-256, droits)
                     </p>
                     <p style="color: var(--text-muted); font-size: 0.75rem; margin-top: 0.5rem;">
-                        Le DIP (Dissemination Package) est maintenant disponible pour consultation.
+                        Format pérenne : TIFF non compressé + PDF/A-3. Le DIP (version web légère) est prêt.
+                    </p>
+                    <p style="color: var(--neon-magenta); font-size: 0.7rem; margin-top: 0.75rem; font-style: italic;">
+                        ⚡ Coût carbone de cette opération : ~0.02 kWh. L'éternité numérique a un prix écologique.
                     </p>
                 </div>
             </div>
@@ -336,8 +370,9 @@
                         <div class="oais__label">Submission Information Package</div>
                     </div>
                     <p class="oais__description">
-                        <strong>Entrée</strong> — Le producteur soumet le document original
-                        (scan haute résolution du folio) accompagné de ses métadonnées descriptives.
+                        <strong>Le Brut</strong> — Un scan TIFF non compressé de 800 Mo. Lourd comme une encyclopédie.
+                        Chaque pixel capture 16 bits de profondeur colorimétrique. C'est la matière première,
+                        sans aucune perte d'information.
                     </p>
                 </div>
 
@@ -346,13 +381,15 @@
                 <!-- AIP -->
                 <div class="oais__step">
                     <div class="oais__box">
-                        <div class="oais__icon">🔐</div>
+                        <div class="oais__icon">🏦</div>
                         <div class="oais__acronym">AIP</div>
                         <div class="oais__label">Archival Information Package</div>
                     </div>
                     <p class="oais__description">
-                        <strong>Archivage</strong> — Le document est converti en format pérenne (TIFF, PDF/A),
-                        enrichi de métadonnées de préservation.
+                        <strong>Le Coffre-Fort</strong> — Injection de métadonnées XML conformément à la norme ISO 14721
+                        :
+                        provenance, checksums, événements de préservation. Ce fichier restera lisible
+                        même si les logiciels actuels disparaissent.
                     </p>
                 </div>
 
@@ -361,13 +398,14 @@
                 <!-- DIP -->
                 <div class="oais__step">
                     <div class="oais__box">
-                        <div class="oais__icon">📤</div>
+                        <div class="oais__icon">🌐</div>
                         <div class="oais__acronym">DIP</div>
                         <div class="oais__label">Dissemination Information Package</div>
                     </div>
                     <p class="oais__description">
-                        <strong>Diffusion</strong> — Une version adaptée est générée pour le consommateur,
-                        préservant l'original intact.
+                        <strong>L'Accès Universel</strong> — Une version légère (JPEG 200 Ko) pour le web mondial.
+                        Le DIP doit être accessible même avec une connexion lente —
+                        un étudiant à Dakar mérite le même accès qu'un chercheur à Milan.
                     </p>
                 </div>
             </div>
@@ -393,16 +431,23 @@
         <div class="section__container">
             <header class="section__header reveal">
                 <span class="section__number">Chapitre III</span>
-                <h2 class="section__title">La Renaissance par l'IA</h2>
-                <p class="section__subtitle">Quand l'intelligence artificielle déchiffre le génie</p>
+                <h2 class="section__title">L'Assistant Faillible</h2>
+                <p class="section__subtitle">L'IA ne remplace pas l'historien — elle accélère ses erreurs autant que ses
+                    découvertes</p>
             </header>
 
             <div class="ia__intro reveal">
                 <p>
-                    L'intelligence artificielle ne remplace pas l'historien — elle lui offre des outils
-                    d'une puissance sans précédent. Depuis 2020, les avancées en <strong>traitement du langage
-                        naturel</strong> (NLP) et en <strong>vision par ordinateur</strong> ont ouvert des perspectives
-                    inimaginables pour l'étude des manuscrits anciens.
+                    Soyons clairs : l'intelligence artificielle n'est <strong>pas magique</strong>.
+                    Elle ne « comprend » pas Léonard. Elle calcule des probabilités statistiques
+                    basées sur des millions de textes anciens. Parfois, elle hallucine. Parfois,
+                    elle invente des mots qui n'existent pas. <strong>94% de précision</strong>
+                    signifie aussi <strong>6% d'erreurs</strong> — potentiellement critiques.
+                </p>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--accent-gold);">
+                    Malgré tout, ces outils transforment la recherche. Ce qui prenait des mois
+                    prend maintenant des heures. L'IA est un <strong>accélérateur</strong>,
+                    pas un substitut à l'expertise humaine.
                 </p>
             </div>
 
@@ -410,7 +455,7 @@
             <div class="reveal" style="margin: 3rem 0;">
                 <h3
                     style="text-align: center; margin-bottom: 1.5rem; font-family: var(--font-display); color: var(--accent-gold);">
-                    🔍 La Loupe Magique — Décodeur d'Écriture Miroir
+                    🔍 La Loupe Probabiliste — Décodeur d'Écriture Miroir
                 </h3>
 
                 <div class="magic-lens" id="magicLens">
@@ -418,16 +463,16 @@
                     <div class="magic-lens__layer magic-lens__original">
                         <p
                             style="font-size: 0.7rem; color: var(--text-muted); margin-bottom: 1rem; font-family: var(--font-mono);">
-                            TEXTE ORIGINAL — ÉCRITURE SPÉCULAIRE DE LÉONARD
+                            TEXTE ORIGINAL — ÉCRITURE SPÉCULAIRE (MIROIR)
                         </p>
                         <p class="magic-lens__mirror-text">
-                            « .eriatnemélpmoc te esneféd al à sruojuot tse ecneréfféD aL »
+                            « ...iam allaf non aitnerepse aL »
                         </p>
                         <p class="magic-lens__mirror-text" style="margin-top: 1rem;">
-                            « .tiudort eréilucétrap enu'd noisserpxe'l tse egagnaL eL »
+                            « ...onaganartni ic ehc izidduig irtson i onos ehc »
                         </p>
                         <p style="font-size: 0.8rem; margin-top: 2rem; color: var(--accent-sepia);">
-                            📜 Folio 1033r — Codex Atlanticus
+                            📜 Folio 119r — Codex Atlanticus, Milan
                         </p>
                     </div>
 
@@ -435,16 +480,16 @@
                     <div class="magic-lens__layer magic-lens__revealed" id="revealedLayer">
                         <p
                             style="font-size: 0.7rem; color: var(--neon-cyan); margin-bottom: 1rem; font-family: var(--font-mono);">
-                            ✨ TRADUCTION IA — 94.7% CONFIANCE
+                            ✨ TRADUCTION PROBABILISTE — Confiance: 94.2% (±3.1%)
                         </p>
                         <p class="magic-lens__translated-text">
-                            « La Différence est toujours à la défense et complémentaire. »
+                            « L'expérience ne faut jamais... »
                         </p>
                         <p class="magic-lens__translated-text" style="margin-top: 1rem;">
-                            « Le Langage est l'expression d'une particularité traduit. »
+                            « ...ce sont nos jugements qui nous trompent. »
                         </p>
-                        <p style="font-size: 0.8rem; margin-top: 2rem; color: var(--neon-magenta);">
-                            🤖 Modèle: Leonardo-Translator-v2
+                        <p style="font-size: 0.75rem; margin-top: 1.5rem; color: var(--neon-magenta);">
+                            🤖 Modèle: medieval-italian-bert-v3 | Vérification humaine recommandée
                         </p>
                     </div>
 
@@ -460,26 +505,28 @@
             <div class="ia__features reveal">
                 <div class="ia__feature">
                     <div class="ia__feature-icon">🔤</div>
-                    <h4>Traduction Neuronale</h4>
+                    <h4>OCR + Traduction Neuronale</h4>
                     <p>
-                        Des modèles Transformer, entraînés sur des corpus d'italien médiéval et renaissance,
-                        déchiffrent l'écriture spéculaire avec une précision de 94%.
+                        Les modèles Transformer (BERT, GPT) entraînés sur des corpus d'italien médiéval
+                        déchiffrent l'écriture spéculaire. <strong>Limite :</strong> Les abréviations
+                        rares causent encore 6% d'erreurs.
                     </p>
                 </div>
                 <div class="ia__feature">
-                    <div class="ia__feature-icon">🎨</div>
-                    <h4>Reconstruction 3D</h4>
+                    <div class="ia__feature-icon">⚠️</div>
+                    <h4>Reconstruction 3D (Prudence)</h4>
                     <p>
-                        Les réseaux génératifs (GANs) transforment les croquis bidimensionnels en modèles
-                        tridimensionnels interactifs.
+                        Les GANs transforment les croquis 2D en modèles 3D. <strong>Danger :</strong>
+                        L'IA « invente » parfois des engrenages qui n'existent pas dans le dessin original.
+                        Chaque reconstruction nécessite validation par un ingénieur.
                     </p>
                 </div>
                 <div class="ia__feature">
-                    <div class="ia__feature-icon">🔍</div>
-                    <h4>Analyse Comparative</h4>
+                    <div class="ia__feature-icon">🧩</div>
+                    <h4>Reconnexion des Fragments</h4>
                     <p>
-                        L'IA détecte des correspondances stylistiques et thématiques entre feuillets
-                        dispersés dans différentes collections mondiales.
+                        L'IA compare les feuillets de Milan, Paris (Institut de France) et Londres (British Library)
+                        pour reconstituer le « puzzle mental » de Léonard, dispersé depuis 400 ans.
                     </p>
                 </div>
             </div>
@@ -561,58 +608,61 @@
         <div class="section__container">
             <header class="section__header reveal">
                 <span class="section__number">Chapitre IV</span>
-                <h2 class="section__title">Mémoire et Éthique</h2>
-                <p class="section__subtitle">Les questions que pose l'éternité numérique</p>
+                <h2 class="section__title">Les Questions qui Dérangent</h2>
+                <p class="section__subtitle">Souveraineté, écologie, accessibilité : le numérique n'est pas neutre</p>
             </header>
 
             <div class="future__content reveal">
                 <blockquote class="future__quote">
-                    Préserver n'est pas figer. C'est transmettre l'essence vivante d'une œuvre
-                    à ceux qui ne sont pas encore nés.
+                    « Le numérique n'est pas une fin. C'est un moyen. Sans maintenance humaine,
+                    les données meurent plus vite que le papier. »
                 </blockquote>
 
+                <h3 style="color: var(--neon-cyan); margin-top: 2rem;">🏴 Souveraineté : À Qui Appartient la Mémoire ?
+                </h3>
                 <p class="future__text">
-                    La numérisation du Codex Atlanticus, aussi sophistiquée soit-elle, soulève des questions
-                    qui dépassent largement le cadre technique. <strong>Qui contrôle la mémoire numérique
-                        de l'humanité ?</strong> Dans un monde où les formats évoluent, où les entreprises
-                    technologiques naissent et disparaissent en une décennie, où les serveurs peuvent être
-                    débranchés du jour au lendemain — comment garantir que ces trésors resteront accessibles
-                    dans 100 ans ? Dans 500 ans ?
+                    Si le Codex Atlanticus est stocké sur des serveurs <strong>Amazon Web Services</strong>
+                    (Américains) ou <strong>Alibaba Cloud</strong> (Chinois), qui contrôle réellement
+                    la mémoire culturelle italienne ? Un conflit géopolitique, une décision commerciale,
+                    une faillite — et l'accès peut être coupé. L'OAIS exige des formats ouverts,
+                    mais le <strong>modèle économique</strong> de la préservation à 500 ans reste non résolu.
                 </p>
 
+                <h3 style="color: var(--neon-magenta); margin-top: 2rem;">🌍 Fracture Numérique : Pour Qui Préserve-t-on
+                    ?</h3>
                 <p class="future__text">
-                    La question de la <strong>souveraineté numérique</strong> devient cruciale. Lorsqu'une
-                    institution culturelle confie ses archives à un prestataire cloud américain ou chinois,
-                    elle accepte implicitement que la pérennité de son patrimoine dépende de décisions
-                    commerciales prises à des milliers de kilomètres. L'OAIS répond partiellement à ce défi
-                    en exigeant des formats ouverts et documentés — mais le modèle économique de la
-                    préservation à très long terme reste un problème non résolu.
+                    Cette expérience 3D immersive nécessite une connexion haut débit et un ordinateur récent.
+                    <strong>Qu'en est-il d'un étudiant à Bamako avec 256 kbps ?</strong>
+                    Le DIP (version diffusable) doit garantir l'inclusion : des versions légères,
+                    des descriptions textuelles, des alternatives basse résolution.
+                    Sinon, nous créons un patrimoine numérique <strong>réservé aux privilégiés</strong>.
                 </p>
 
+                <h3 style="color: var(--accent-gold); margin-top: 2rem;">⚡ Coût Écologique : L'Éternité Carbone</h3>
                 <p class="future__text">
-                    L'intelligence artificielle ajoute une nouvelle couche de complexité. Lorsqu'un algorithme
-                    « traduit » un texte de Léonard, qui est l'auteur de cette traduction ? Quand un modèle
-                    génératif reconstitue une machine en 3D à partir d'un croquis ambigu, cette reconstruction
-                    est-elle une interprétation ou une falsification ? La frontière entre <strong>augmentation</strong>
-                    et <strong>altération</strong> du patrimoine devient poreuse.
+                    Archiver des téraoctets de données consomme de l'énergie <strong>24h/24, 7j/7</strong>.
+                    Les data centers représentent déjà 2% des émissions mondiales de CO₂ —
+                    autant que l'aviation civile. La préservation numérique a un <strong>coût carbone</strong>.
+                    Chaque folio archivé en haute résolution, c'est de l'électricité consommée pendant des siècles.
                 </p>
 
+                <h3 style="color: var(--text-primary); margin-top: 2rem;">🤖 Qui Est l'Auteur ?</h3>
                 <p class="future__text">
-                    Léonard écrivait à l'envers, peut-être pour protéger ses idées des regards indiscrets.
-                    Cinq siècles plus tard, nous devons inventer de nouvelles formes de protection — non pas
-                    contre la lecture, mais contre <strong>l'oubli</strong>, contre <strong>l'obsolescence</strong>,
-                    contre la <strong>concentration</strong> des pouvoirs numériques. La décentralisation des
-                    archives, l'interopérabilité des standards, la transparence des algorithmes : ces batailles
-                    techniques sont aussi des batailles politiques et civilisationnelles.
+                    Quand l'IA « traduit » un texte de Léonard, qui signe cette traduction ?
+                    Quand un GAN « reconstruit » une machine à partir d'un croquis ambigu,
+                    est-ce une <strong>interprétation</strong> ou une <strong>falsification</strong> ?
+                    La frontière entre augmentation et altération du patrimoine devient floue.
+                    Nous avons besoin de <strong>chartes éthiques</strong> que nous n'avons pas encore écrites.
                 </p>
 
-                <p class="future__text">
-                    Le Codex Atlanticus a survécu aux guerres, aux incendies, aux révolutions.
-                    Survivra-t-il à l'ère numérique ?
+                <p class="future__text"
+                    style="margin-top: 2rem; font-style: italic; text-align: center; color: var(--accent-gold);">
+                    Le Codex Atlanticus a survécu aux guerres, aux vols, aux restaurations désastreuses.<br>
+                    <strong>Survivra-t-il à notre négligence numérique ?</strong>
                 </p>
 
                 <button class="future__cta" onclick="window.open('https://www.iso.org/standard/57284.html', '_blank')">
-                    En savoir plus sur OAIS (ISO 14721)
+                    Lire la Norme OAIS (ISO 14721)
                     <span>→</span>
                 </button>
 
@@ -634,22 +684,24 @@
     <!-- Deep Zoom Lightbox -->
     <div class="lightbox" id="lightbox">
         <button class="lightbox__close" id="lightboxClose">×</button>
-        <div class="lightbox__hint">Survolez l'image pour zoomer</div>
+        <div class="lightbox__hint">Survolez pour zoomer — Chaque détail compte</div>
         <div class="lightbox__content" id="lightboxContent">
-            <div class="lightbox__image-placeholder" id="lightboxImage">
+            <div class="lightbox__image-placeholder" id="lightboxImage"
+                data-description="IMAGE: Scan haute résolution 800 Mo, détail des fibres de papier visibles, traces d'encre ferro-gallique, texture du parchemin de lin du XVe siècle">
                 <span style="font-size: 4rem;">📜</span>
                 <span
                     style="font-family: var(--font-mono); font-size: 0.8rem; margin-top: 1rem; color: var(--text-muted);">
-                    IMAGE: Folio Haute Résolution
+                    IMAGE: Folio 119r — Résolution 16 bits
                 </span>
                 <span
                     style="font-family: var(--font-mono); font-size: 0.65rem; margin-top: 0.5rem; color: var(--text-muted);">
-                    Zoom interactif au survol
+                    Zoom x2.5 au survol — Chaque fibre visible
                 </span>
             </div>
         </div>
         <p class="lightbox__caption" id="lightboxCaption">
-            Codex Atlanticus — Folio 1033r — Biblioteca Ambrosiana, Milan
+            Codex Atlanticus — Folio 119r — « L'expérience ne faut jamais... » — Biblioteca Ambrosiana, Milan
+            (1478-1519)
         </p>
     </div>
 
@@ -658,12 +710,13 @@
         <div class="footer__content">
             <h3 class="footer__title">Codex Atlanticus 2.0</h3>
             <p class="footer__credits">
-                Un projet de documentaire interactif sur la préservation numérique du patrimoine
+                Une enquête documentaire interactive sur la course contre l'oubli
             </p>
-            <p class="footer__credits">
-                Concept & Développement — Scrollytelling Expérimental
+            <p class="footer__credits" style="font-size: 0.8rem; opacity: 0.7;">
+                Sources : Biblioteca Ambrosiana (Milan), Institut de France (Paris), British Library (Londres)<br>
+                Norme de référence : ISO 14721 (OAIS) | Modèle IA : medieval-italian-bert-v3
             </p>
-            <p class="footer__year">© 2025 — Tous droits réservés</p>
+            <p class="footer__year">© 2025 — Projet Académique — Aucune affiliation officielle</p>
         </div>
     </footer>
 
@@ -673,40 +726,37 @@
 
     <!-- Ambient Sound -->
     <audio id="ambientAudio" loop preload="none" data-placeholder="ambient-sound"
-        data-description="AUDIO: Ambiance Renaissance — Plume sur parchemin, crépitement de bougie, vent lointain"
-        data-format="MP3/OGG" data-duration="Loop 2-3min">
+        data-description="AUDIO AMBIANCE: Grattement doux d'une plume sur parchemin, crépitement lointain de bougie dans une bibliothèque vide, souffle de vent à travers une fenêtre à vitraux, battement de cœur lent et sourd en arrière-plan (60 BPM), écho de pas sur dalle de pierre"
+        data-format="MP3/OGG" data-duration="Loop 3min">
         <!-- <source src="assets/audio/ambient-renaissance.mp3" type="audio/mpeg"> -->
-        <!-- <source src="assets/audio/ambient-renaissance.ogg" type="audio/ogg"> -->
     </audio>
 
     <!-- Chapter Narrations -->
     <audio id="narration-heritage" preload="none" data-placeholder="narration-chapter-1"
-        data-description="AUDIO: Narration Chapitre I — L'Héritage Fragile (Voix FR, ton documentaire)"
-        data-format="MP3" data-duration="60-90s">
+        data-description="NARRATION CH.1: Voix grave et posée (homme 50+), ton de documentaire Arte, rythme lent. Commence par un soupir. Texte: 'En 1590, un sculpteur ambitieux a commis l'irréparable. Pompeo Leoni, au nom de la gloire, a découpé l'œuvre d'un génie pour la faire entrer dans un livre.' Fond sonore: papier qui se froisse, ciseaux lointains."
+        data-format="MP3" data-duration="90s">
         <!-- <source src="assets/audio/narration-heritage.mp3" type="audio/mpeg"> -->
     </audio>
 
     <audio id="narration-oais" preload="none" data-placeholder="narration-chapter-2"
-        data-description="AUDIO: Narration Chapitre II — La Forteresse Numérique (Voix FR, ton technique)"
-        data-format="MP3" data-duration="60-90s">
+        data-description="NARRATION CH.2: Voix féminine technique (ingénieure 35-40), ton précis et rassuré. Texte: 'Le modèle OAIS est né dans l'espace. Littéralement. Les ingénieurs de la NASA ont compris que les données des sondes Voyager devaient survivre à leurs créateurs.' Fond sonore: bips numériques doux, serveur qui tourne."
+        data-format="MP3" data-duration="75s">
         <!-- <source src="assets/audio/narration-oais.mp3" type="audio/mpeg"> -->
     </audio>
 
     <audio id="narration-ia" preload="none" data-placeholder="narration-chapter-3"
-        data-description="AUDIO: Narration Chapitre III — La Renaissance par l'IA (Voix FR, ton futuriste)"
-        data-format="MP3" data-duration="60-90s">
+        data-description="NARRATION CH.3: Voix jeune et enthousiaste (doctorant 28), ton passionné mais nuancé. Texte: 'Attention : l'IA ne comprend pas Léonard. Elle calcule des probabilités. 94% de précision, c'est aussi 6% d'erreurs potentiellement désastreuses.' Fond sonore: clavier mécanique, notifications digitales."
+        data-format="MP3" data-duration="80s">
         <!-- <source src="assets/audio/narration-ia.mp3" type="audio/mpeg"> -->
     </audio>
 
     <audio id="narration-future" preload="none" data-placeholder="narration-chapter-4"
-        data-description="AUDIO: Narration Chapitre IV — Mémoire et Éthique (Voix FR, ton réflexif)" data-format="MP3"
-        data-duration="60-90s">
+        data-description="NARRATION CH.4: Voix grave et interrogative (philosophe 60+), ton contemplatif avec silences. Texte: 'Si le Codex est stocké sur des serveurs américains... à qui appartient la mémoire italienne ? [pause 3s] Le numérique n'est pas neutre. Il consomme, il exclut, il dépend.' Fond sonore: bourdonnement de data center, vent numérique."
+        data-format="MP3" data-duration="100s">
         <!-- <source src="assets/audio/narration-future.mp3" type="audio/mpeg"> -->
     </audio>
 
 
 </body>
-
-</html>
 
 </html>
