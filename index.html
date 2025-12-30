@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codex Atlanticus 2.0 — L'Esprit de Léonard à l'Ère Numérique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__logo">CODEX 2.0</div>
+        <ul class="nav__links">
+            <li><a href="#heritage">Héritage</a></li>
+            <li><a href="#oais">OAIS</a></li>
+            <li><a href="#ia">Intelligence</a></li>
+            <li><a href="#future">Avenir</a></li>
+        </ul>
+        <div class="audio-control">
+            <button class="audio-control__btn" id="ambientToggle" aria-label="Activer/Désactiver le son ambiant"
+                title="Son Ambiant">
+                🔇
+            </button>
+            <span class="audio-control__label">Ambiance</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Canvas Constellation -->
+    <section class="hero constellation" id="hero">
+        <!-- Canvas Data Constellation Background -->
+        <canvas class="constellation__canvas" id="constellationCanvas"></canvas>
+
+        <div class="hero__content constellation__content">
+            <span class="hero__badge">Documentaire Interactif</span>
+            <h1 class="hero__title constellation__title">Codex Atlanticus 2.0</h1>
+            <p class="hero__subtitle constellation__subtitle">L'Esprit de Léonard à l'Épreuve de l'Éternité Numérique
+            </p>
+
+            <div style="display: flex; gap: 3rem; margin: 2rem 0;">
+                <div style="text-align: center;">
+                    <div class="constellation__stat" data-count="1119">0</div>
+                    <div class="constellation__stat-label">Feuillets</div>
+                </div>
+                <div style="text-align: center;">
+                    <div class="constellation__stat" data-count="500">0</div>
+                    <div class="constellation__stat-label">Ans d'Histoire</div>
+                </div>
+                <div style="text-align: center;">
+                    <div class="constellation__stat" data-count="94">0</div>
+                    <div class="constellation__stat-label">% Précision IA</div>
+                </div>
+            </div>
+
+            <button class="hero__cta" onclick="scrollToSection('heritage')">
+                Commencer l'Exploration
+                <span class="hero__cta-icon">↓</span>
+            </button>
+        </div>
+
+        <div class="constellation__hint">Bougez la souris pour interagir avec les données</div>
+
+        <div class="hero__scroll-indicator">
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Section 1: L'Héritage Fragile — Sticky Scrollytelling -->
+    <section class="scrollytelling" id="heritage" data-state="intro">
+        <!-- Scroll Progress Indicator -->
+        <div class="scroll-progress">
+            <div class="scroll-progress__bar" id="heritageProgress"></div>
+            <span class="scroll-progress__label">Chapitre I</span>
+        </div>
+
+        <!-- Sticky Visual Panel -->
+        <div class="scrollytelling__sticky">
+            <div class="scrollytelling__visual" id="heritageVisual">
+                <!-- Interactive Hotspot Container -->
+                <div class="hotspot-container" id="codexHotspotContainer"
+                    style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+                    <div class="hotspot-container__placeholder" data-placeholder="codex-folio-full"
+                        style="width: 60%; height: 80%;">
+                        <span class="placeholder-icon">📜</span>
+                        <span class="placeholder-text">IMAGE: Folio du Codex Atlanticus</span>
+                        <span class="placeholder-text" style="font-size: 0.55rem; margin-top: 0.5rem; opacity: 0.6;">
+                            Cliquez sur l'image pour le Deep Zoom
+                        </span>
+                    </div>
+
+                    <!-- Hotspot 1: Mercury Stain -->
+                    <div class="hotspot" style="top: 25%; left: 35%;" data-hotspot="mercury">
+                        <div class="hotspot__pulse"></div>
+                        <div class="hotspot__dot"></div>
+                    </div>
+
+                    <!-- Hotspot 2: Historical Fold -->
+                    <div class="hotspot" style="top: 50%; left: 65%;" data-hotspot="fold">
+                        <div class="hotspot__pulse"></div>
+                        <div class="hotspot__dot"></div>
+                    </div>
+
+                    <!-- Hotspot 3: Mirror Writing -->
+                    <div class="hotspot" style="top: 75%; left: 50%;" data-hotspot="writing">
+                        <div class="hotspot__pulse"></div>
+                        <div class="hotspot__dot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scrolling Story Cards -->
+        <div class="scrollytelling__content">
+            <!-- Card 1: Introduction -->
+            <article class="story-card" data-card="intro">
+                <span class="section__number">Chapitre I</span>
+                <h2 class="section__title">L'Héritage Fragile</h2>
+                <p class="section__subtitle">Un trésor de la Renaissance menacé par le temps</p>
+            </article>
+
+            <!-- Card 2: The Codex -->
+            <article class="story-card" data-card="codex">
+                <h3>Le Plus Grand Recueil de Léonard</h3>
+                <p>
+                    Le <strong>Codex Atlanticus</strong> représente la plus vaste et la plus ambitieuse collection
+                    de dessins et d'écrits jamais rassemblée par Léonard de Vinci. Ce nom évocateur, « Atlanticus »,
+                    ne fait pas référence à l'océan mythique, mais au format « atlas » — les grandes dimensions
+                    des feuillets qui composent ce recueil monumental.
+                </p>
+                <div class="story-card__stat">
+                    <span class="story-card__stat-number">1,119</span>
+                    <span class="story-card__stat-label">Feuillets</span>
+                </div>
+            </article>
+
+            <!-- Card 3: The Collection -->
+            <article class="story-card" data-card="collection">
+                <h3>La Biblioteca Ambrosiana</h3>
+                <p>
+                    Conservé précieusement à la <strong>Biblioteca Ambrosiana de Milan</strong> depuis 1637,
+                    ce manuscrit extraordinaire rassemble près de quarante années de la vie intellectuelle
+                    du maître — de 1478 à 1519. Chaque page est une fenêtre ouverte sur un esprit en
+                    perpétuelle ébullition.
+                </p>
+                <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
+                    Machines volantes, études anatomiques, réflexions sur l'hydraulique,
+                    croquis d'architecture visionnaire...
+                </p>
+            </article>
+
+            <!-- Card 4: Pompeo Leoni -->
+            <article class="story-card" data-card="leoni">
+                <h3>Le Puzzle de Pompeo Leoni</h3>
+                <p>
+                    Le sculpteur Pompeo Leoni, au XVIe siècle, fut le premier à compiler ces feuilles éparses,
+                    les découpant parfois pour les réorganiser selon sa propre logique. Cette intervention,
+                    bien qu'elle ait préservé les documents, a aussi <strong>fragmenté la pensée originelle</strong>
+                    de Léonard, créant un puzzle que les chercheurs tentent encore aujourd'hui de reconstituer.
+                </p>
+            </article>
+
+            <!-- Card 5: The Danger -->
+            <article class="story-card story-card--danger" data-card="danger">
+                <h3>⚠️ Le Danger Silencieux</h3>
+                <p>
+                    Les encres ferro-galliques et les pigments au mercure utilisés par Léonard
+                    rongent inexorablement le papier de chiffon. L'acidité migre, les fibres se fragilisent.
+                </p>
+                <p style="margin-top: 1rem; color: var(--accent-gold);">
+                    Chaque manipulation, chaque exposition à la lumière ou à l'humidité accélère
+                    une dégradation que cinq siècles n'ont fait qu'entamer. <strong>Le temps est compté.</strong>
+                </p>
+
+                <!-- Narration Button -->
+                <button class="narration-btn" data-audio="narration-heritage" style="margin-top: 1.5rem;">
+                    <span class="narration-btn__icon">🎧</span>
+                    <span class="narration-btn__waves">
+                        <span class="narration-btn__wave"></span>
+                        <span class="narration-btn__wave"></span>
+                        <span class="narration-btn__wave"></span>
+                        <span class="narration-btn__wave"></span>
+                    </span>
+                    <span>Écouter la Narration</span>
+                </button>
+            </article>
+        </div>
+    </section>
+
+    <!-- Hotspot Tooltips (Hidden by default) -->
+    <div class="hotspot-tooltip" id="tooltip-mercury">
+        <div class="hotspot-tooltip__header">
+            <h4 class="hotspot-tooltip__title">Tache de Mercure</h4>
+            <button class="hotspot-tooltip__close">×</button>
+        </div>
+        <div class="hotspot-tooltip__body">
+            <div class="hotspot-tooltip__image-placeholder" data-placeholder="mercury-detail">
+                <span class="placeholder-icon" style="font-size: 1.5rem;">🔍</span>
+                <span class="placeholder-text" style="font-size: 0.6rem;">IMAGE: Détail tache mercure</span>
+            </div>
+            <p class="hotspot-tooltip__text">
+                Les pigments au cinabre (sulfure de mercure) utilisés par Léonard pour certains
+                dessins réagissent chimiquement avec le papier. Cette oxydation progressive
+                crée des auréoles brunâtres qui s'étendent lentement, menaçant d'effacer
+                les traits du maître.
+            </p>
+            <p class="hotspot-tooltip__meta">Zone critique — Conservation prioritaire</p>
+        </div>
+    </div>
+
+    <div class="hotspot-tooltip" id="tooltip-fold">
+        <div class="hotspot-tooltip__header">
+            <h4 class="hotspot-tooltip__title">Pliure Historique</h4>
+            <button class="hotspot-tooltip__close">×</button>
+        </div>
+        <div class="hotspot-tooltip__body">
+            <div class="hotspot-tooltip__image-placeholder" data-placeholder="fold-detail">
+                <span class="placeholder-icon" style="font-size: 1.5rem;">🔍</span>
+                <span class="placeholder-text" style="font-size: 0.6rem;">IMAGE: Détail pliure</span>
+            </div>
+            <p class="hotspot-tooltip__text">
+                Cette pliure date probablement du XVIe siècle, lorsque Pompeo Leoni
+                réorganisa les feuillets. Les fibres du papier, fragilisées par des
+                siècles de tension, menacent de se rompre à chaque consultation.
+                La numérisation permet d'éviter toute manipulation future.
+            </p>
+            <p class="hotspot-tooltip__meta">Fragilité structurelle — Manipulation interdite</p>
+        </div>
+    </div>
+
+    <div class="hotspot-tooltip" id="tooltip-writing">
+        <div class="hotspot-tooltip__header">
+            <h4 class="hotspot-tooltip__title">Écriture Spéculaire</h4>
+            <button class="hotspot-tooltip__close">×</button>
+        </div>
+        <div class="hotspot-tooltip__body">
+            <div class="hotspot-tooltip__image-placeholder" data-placeholder="mirror-writing-detail">
+                <span class="placeholder-icon" style="font-size: 1.5rem;">🔍</span>
+                <span class="placeholder-text" style="font-size: 0.6rem;">IMAGE: Écriture miroir</span>
+            </div>
+            <p class="hotspot-tooltip__text">
+                Léonard écrivait de droite à gauche, en miroir — peut-être parce qu'il
+                était gaucher, peut-être pour protéger ses idées des regards indiscrets.
+                Cette particularité, longtemps un obstacle à l'étude, devient aujourd'hui
+                un défi parfait pour l'intelligence artificielle.
+            </p>
+            <p class="hotspot-tooltip__meta">Candidat idéal pour traduction IA</p>
+        </div>
+    </div>
+
+    <!-- Section 2: OAIS with Drag & Drop Simulation -->
+    <section class="section oais" id="oais">
+        <div class="section__container">
+            <header class="section__header reveal">
+                <span class="section__number">Chapitre II</span>
+                <h2 class="section__title">La Forteresse Numérique</h2>
+                <p class="section__subtitle">OAIS : Le Standard International de Préservation</p>
+            </header>
+
+            <div class="oais__intro reveal">
+                <p>
+                    Comment garantir qu'un fichier numérique restera lisible dans 100 ans ? Dans 500 ans ?
+                    Cette question, apparemment simple, est au cœur de l'archivistique moderne. Le modèle
+                    <strong>OAIS</strong> (Open Archival Information System), devenu la norme internationale
+                    <strong>ISO 14721</strong>, apporte une réponse architecturale rigoureuse à ce défi civilisationnel.
+                </p>
+            </div>
+
+            <!-- Interactive OAIS Simulation -->
+            <div class="oais-simulation reveal" id="oaisSimulation">
+                <div class="oais-simulation__instruction">
+                    👆 Glissez le manuscrit vers l'archive pour simuler le processus OAIS
+                </div>
+
+                <div class="oais-simulation__zones">
+                    <!-- Source: SIP -->
+                    <div class="oais-simulation__source" id="sipZone">
+                        <div class="draggable-manuscript" id="draggableManuscript" draggable="true">
+                            <span class="draggable-manuscript__icon">📜</span>
+                            <span class="draggable-manuscript__label">Folio 1033r</span>
+                        </div>
+                        <div style="margin-top: 1rem; text-align: center;">
+                            <div class="oais__acronym" style="font-size: 1.2rem;">SIP</div>
+                            <div style="font-size: 0.65rem; color: var(--text-muted);">Submission Package</div>
+                        </div>
+                    </div>
+
+                    <!-- Arrow -->
+                    <div class="oais-simulation__arrow">→</div>
+
+                    <!-- Target: AIP Archive -->
+                    <div class="drop-zone" id="aipDropZone">
+                        <span class="drop-zone__icon">🔐</span>
+                        <span class="drop-zone__label">Archive AIP</span>
+                        <span class="drop-zone__status">En attente...</span>
+
+                        <!-- Processing Animation (hidden by default) -->
+                        <div class="processing-animation" id="processingAnimation">
+                            <div class="processing-animation__spinner"></div>
+                            <span class="processing-animation__text">Archivage en cours...</span>
+                        </div>
+
+                        <!-- Archived Package (hidden by default) -->
+                        <div class="archived-package" id="archivedPackage">
+                            <span class="archived-package__icon">✅</span>
+                            <span class="archived-package__label">Archival Information Package</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OAIS Result Message -->
+                <div id="oaisResultMessage"
+                    style="text-align: center; margin-top: 2rem; opacity: 0; transition: opacity 0.5s;">
+                    <p style="color: #27ca40; font-family: var(--font-mono); font-size: 0.85rem;">
+                        ✓ Document archivé avec succès ! Métadonnées générées, format pérenne (TIFF) créé.
+                    </p>
+                    <p style="color: var(--text-muted); font-size: 0.75rem; margin-top: 0.5rem;">
+                        Le DIP (Dissemination Package) est maintenant disponible pour consultation.
+                    </p>
+                </div>
+            </div>
+
+            <!-- OAIS Technical Details -->
+            <div class="oais__flow reveal" style="margin-top: 3rem;">
+                <!-- SIP -->
+                <div class="oais__step">
+                    <div class="oais__box">
+                        <div class="oais__icon">📥</div>
+                        <div class="oais__acronym">SIP</div>
+                        <div class="oais__label">Submission Information Package</div>
+                    </div>
+                    <p class="oais__description">
+                        <strong>Entrée</strong> — Le producteur soumet le document original
+                        (scan haute résolution du folio) accompagné de ses métadonnées descriptives.
+                    </p>
+                </div>
+
+                <div class="oais__arrow">→</div>
+
+                <!-- AIP -->
+                <div class="oais__step">
+                    <div class="oais__box">
+                        <div class="oais__icon">🔐</div>
+                        <div class="oais__acronym">AIP</div>
+                        <div class="oais__label">Archival Information Package</div>
+                    </div>
+                    <p class="oais__description">
+                        <strong>Archivage</strong> — Le document est converti en format pérenne (TIFF, PDF/A),
+                        enrichi de métadonnées de préservation.
+                    </p>
+                </div>
+
+                <div class="oais__arrow">→</div>
+
+                <!-- DIP -->
+                <div class="oais__step">
+                    <div class="oais__box">
+                        <div class="oais__icon">📤</div>
+                        <div class="oais__acronym">DIP</div>
+                        <div class="oais__label">Dissemination Information Package</div>
+                    </div>
+                    <p class="oais__description">
+                        <strong>Diffusion</strong> — Une version adaptée est générée pour le consommateur,
+                        préservant l'original intact.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Narration Button -->
+            <div class="reveal" style="text-align: center; margin-top: 2rem;">
+                <button class="narration-btn" data-audio="narration-oais">
+                    <span class="narration-btn__icon">🎧</span>
+                    <span class="narration-btn__waves">
+                        <span class="narration-btn__wave"></span>
+                        <span class="narration-btn__wave"></span>
+                        <span class="narration-btn__wave"></span>
+                        <span class="narration-btn__wave"></span>
+                    </span>
+                    <span>Écouter la Narration</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: IA with Magic Lens Decoder -->
+    <section class="section ia" id="ia">
+        <div class="section__container">
+            <header class="section__header reveal">
+                <span class="section__number">Chapitre III</span>
+                <h2 class="section__title">La Renaissance par l'IA</h2>
+                <p class="section__subtitle">Quand l'intelligence artificielle déchiffre le génie</p>
+            </header>
+
+            <div class="ia__intro reveal">
+                <p>
+                    L'intelligence artificielle ne remplace pas l'historien — elle lui offre des outils
+                    d'une puissance sans précédent. Depuis 2020, les avancées en <strong>traitement du langage
+                        naturel</strong> (NLP) et en <strong>vision par ordinateur</strong> ont ouvert des perspectives
+                    inimaginables pour l'étude des manuscrits anciens.
+                </p>
+            </div>
+
+            <!-- Magic Lens Decoder -->
+            <div class="reveal" style="margin: 3rem 0;">
+                <h3
+                    style="text-align: center; margin-bottom: 1.5rem; font-family: var(--font-display); color: var(--accent-gold);">
+                    🔍 La Loupe Magique — Décodeur d'Écriture Miroir
+                </h3>
+
+                <div class="magic-lens" id="magicLens">
+                    <!-- Original Layer (Mirror Text) -->
+                    <div class="magic-lens__layer magic-lens__original">
+                        <p
+                            style="font-size: 0.7rem; color: var(--text-muted); margin-bottom: 1rem; font-family: var(--font-mono);">
+                            TEXTE ORIGINAL — ÉCRITURE SPÉCULAIRE DE LÉONARD
+                        </p>
+                        <p class="magic-lens__mirror-text">
+                            « .eriatnemélpmoc te esneféd al à sruojuot tse ecneréfféD aL »
+                        </p>
+                        <p class="magic-lens__mirror-text" style="margin-top: 1rem;">
+                            « .tiudort eréilucétrap enu'd noisserpxe'l tse egagnaL eL »
+                        </p>
+                        <p style="font-size: 0.8rem; margin-top: 2rem; color: var(--accent-sepia);">
+                            📜 Folio 1033r — Codex Atlanticus
+                        </p>
+                    </div>
+
+                    <!-- Revealed Layer (Translated) -->
+                    <div class="magic-lens__layer magic-lens__revealed" id="revealedLayer">
+                        <p
+                            style="font-size: 0.7rem; color: var(--neon-cyan); margin-bottom: 1rem; font-family: var(--font-mono);">
+                            ✨ TRADUCTION IA — 94.7% CONFIANCE
+                        </p>
+                        <p class="magic-lens__translated-text">
+                            « La Différence est toujours à la défense et complémentaire. »
+                        </p>
+                        <p class="magic-lens__translated-text" style="margin-top: 1rem;">
+                            « Le Langage est l'expression d'une particularité traduit. »
+                        </p>
+                        <p style="font-size: 0.8rem; margin-top: 2rem; color: var(--neon-magenta);">
+                            🤖 Modèle: Leonardo-Translator-v2
+                        </p>
+                    </div>
+
+                    <div class="magic-lens__hint">
+                        Déplacez votre souris pour révéler la traduction
+                    </div>
+                </div>
+
+                <!-- Custom Cursor for Magic Lens -->
+                <div class="magic-lens__cursor" id="magicCursor"></div>
+            </div>
+
+            <div class="ia__features reveal">
+                <div class="ia__feature">
+                    <div class="ia__feature-icon">🔤</div>
+                    <h4>Traduction Neuronale</h4>
+                    <p>
+                        Des modèles Transformer, entraînés sur des corpus d'italien médiéval et renaissance,
+                        déchiffrent l'écriture spéculaire avec une précision de 94%.
+                    </p>
+                </div>
+                <div class="ia__feature">
+                    <div class="ia__feature-icon">🎨</div>
+                    <h4>Reconstruction 3D</h4>
+                    <p>
+                        Les réseaux génératifs (GANs) transforment les croquis bidimensionnels en modèles
+                        tridimensionnels interactifs.
+                    </p>
+                </div>
+                <div class="ia__feature">
+                    <div class="ia__feature-icon">🔍</div>
+                    <h4>Analyse Comparative</h4>
+                    <p>
+                        L'IA détecte des correspondances stylistiques et thématiques entre feuillets
+                        dispersés dans différentes collections mondiales.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Mode Toggle -->
+            <div class="mode-toggle reveal">
+                <button class="mode-toggle__btn active" data-mode="visual" id="modeVisual">
+                    <span>👁</span> Mode Visuel
+                </button>
+                <button class="mode-toggle__btn" data-mode="code" id="modeCode">
+                    <span>⌨</span> Mode Code
+                </button>
+            </div>
+
+            <!-- Comparison Slider (Visual Mode) -->
+            <div class="comparison reveal" id="comparisonWrapper">
+                <h3 class="comparison__title">⟵ Faites glisser pour comparer ⟶</h3>
+                <div class="comparison__container" id="comparisonContainer">
+                    <!-- After (Background) -->
+                    <div class="comparison__after" data-placeholder="ai-translation-after">
+                        <div class="comparison__placeholder-icon">💡</div>
+                        <p class="comparison__translated-text">
+                            « L'expérience ne trompe jamais ; ce sont nos jugements qui nous trompent. »
+                        </p>
+                        <span class="placeholder-text"
+                            style="position: absolute; top: 1rem; font-size: 0.5rem; opacity: 0.5;">
+                            IMAGE: Texte traduit par IA | 900×560px
+                        </span>
+                        <span class="comparison__label">Traduction Instantanée</span>
+                    </div>
+                    <!-- Before (Foreground with clip) -->
+                    <div class="comparison__before" id="comparisonBefore" data-placeholder="ai-translation-before">
+                        <div class="comparison__placeholder-icon">✒️</div>
+                        <p class="comparison__mirror-text">
+                            .onaganartni ic ehc iduig irtson i onos ehc ;iam ednaganart non azneirepse'L
+                        </p>
+                        <span class="placeholder-text"
+                            style="position: absolute; top: 1rem; font-size: 0.5rem; opacity: 0.5;">
+                            IMAGE: Écriture miroir originale | 900×560px
+                        </span>
+                        <span class="comparison__label">Écriture Miroir</span>
+                    </div>
+                    <!-- Slider Handle -->
+                    <div class="comparison__slider" id="comparisonSlider"></div>
+                </div>
+            </div>
+
+            <!-- Terminal Mode (Code View) -->
+            <div class="terminal" id="terminalWrapper">
+                <div class="terminal__header">
+                    <span class="terminal__dot terminal__dot--red"></span>
+                    <span class="terminal__dot terminal__dot--yellow"></span>
+                    <span class="terminal__dot terminal__dot--green"></span>
+                    <span class="terminal__title">neural_translator.py — Analyse en cours</span>
+                </div>
+                <div class="terminal__body" id="terminalBody">
+                    <!-- Lines will be injected by JS -->
+                </div>
+            </div>
+
+            <!-- Narration Button -->
+            <div class="reveal" style="text-align: center; margin-top: 3rem;">
+                <button class="narration-btn" data-audio="narration-ia">
+                    <span class="narration-btn__icon">🎧</span>
+                    <span class="narration-btn__waves">
+                        <span class="narration-btn__wave"></span>
+                        <span class="narration-btn__wave"></span>
+                        <span class="narration-btn__wave"></span>
+                        <span class="narration-btn__wave"></span>
+                    </span>
+                    <span>Écouter la Narration</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Future -->
+    <section class="section future" id="future">
+        <div class="section__container">
+            <header class="section__header reveal">
+                <span class="section__number">Chapitre IV</span>
+                <h2 class="section__title">Mémoire et Éthique</h2>
+                <p class="section__subtitle">Les questions que pose l'éternité numérique</p>
+            </header>
+
+            <div class="future__content reveal">
+                <blockquote class="future__quote">
+                    Préserver n'est pas figer. C'est transmettre l'essence vivante d'une œuvre
+                    à ceux qui ne sont pas encore nés.
+                </blockquote>
+
+                <p class="future__text">
+                    La numérisation du Codex Atlanticus, aussi sophistiquée soit-elle, soulève des questions
+                    qui dépassent largement le cadre technique. <strong>Qui contrôle la mémoire numérique
+                        de l'humanité ?</strong> Dans un monde où les formats évoluent, où les entreprises
+                    technologiques naissent et disparaissent en une décennie, où les serveurs peuvent être
+                    débranchés du jour au lendemain — comment garantir que ces trésors resteront accessibles
+                    dans 100 ans ? Dans 500 ans ?
+                </p>
+
+                <p class="future__text">
+                    La question de la <strong>souveraineté numérique</strong> devient cruciale. Lorsqu'une
+                    institution culturelle confie ses archives à un prestataire cloud américain ou chinois,
+                    elle accepte implicitement que la pérennité de son patrimoine dépende de décisions
+                    commerciales prises à des milliers de kilomètres. L'OAIS répond partiellement à ce défi
+                    en exigeant des formats ouverts et documentés — mais le modèle économique de la
+                    préservation à très long terme reste un problème non résolu.
+                </p>
+
+                <p class="future__text">
+                    L'intelligence artificielle ajoute une nouvelle couche de complexité. Lorsqu'un algorithme
+                    « traduit » un texte de Léonard, qui est l'auteur de cette traduction ? Quand un modèle
+                    génératif reconstitue une machine en 3D à partir d'un croquis ambigu, cette reconstruction
+                    est-elle une interprétation ou une falsification ? La frontière entre <strong>augmentation</strong>
+                    et <strong>altération</strong> du patrimoine devient poreuse.
+                </p>
+
+                <p class="future__text">
+                    Léonard écrivait à l'envers, peut-être pour protéger ses idées des regards indiscrets.
+                    Cinq siècles plus tard, nous devons inventer de nouvelles formes de protection — non pas
+                    contre la lecture, mais contre <strong>l'oubli</strong>, contre <strong>l'obsolescence</strong>,
+                    contre la <strong>concentration</strong> des pouvoirs numériques. La décentralisation des
+                    archives, l'interopérabilité des standards, la transparence des algorithmes : ces batailles
+                    techniques sont aussi des batailles politiques et civilisationnelles.
+                </p>
+
+                <p class="future__text">
+                    Le Codex Atlanticus a survécu aux guerres, aux incendies, aux révolutions.
+                    Survivra-t-il à l'ère numérique ?
+                </p>
+
+                <button class="future__cta" onclick="window.open('https://www.iso.org/standard/57284.html', '_blank')">
+                    En savoir plus sur OAIS (ISO 14721)
+                    <span>→</span>
+                </button>
+
+                <!-- Narration Button -->
+                <button class="narration-btn" data-audio="narration-future" style="margin-left: 1rem;">
+                    <span class="narration-btn__icon">🎧</span>
+                    <span class="narration-btn__waves">
+                        <span class="narration-btn__wave"></span>
+                        <span class="narration-btn__wave"></span>
+                        <span class="narration-btn__wave"></span>
+                        <span class="narration-btn__wave"></span>
+                    </span>
+                    <span>Écouter la Narration</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deep Zoom Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox__close" id="lightboxClose">×</button>
+        <div class="lightbox__hint">Survolez l'image pour zoomer</div>
+        <div class="lightbox__content" id="lightboxContent">
+            <div class="lightbox__image-placeholder" id="lightboxImage">
+                <span style="font-size: 4rem;">📜</span>
+                <span
+                    style="font-family: var(--font-mono); font-size: 0.8rem; margin-top: 1rem; color: var(--text-muted);">
+                    IMAGE: Folio Haute Résolution
+                </span>
+                <span
+                    style="font-family: var(--font-mono); font-size: 0.65rem; margin-top: 0.5rem; color: var(--text-muted);">
+                    Zoom interactif au survol
+                </span>
+            </div>
+        </div>
+        <p class="lightbox__caption" id="lightboxCaption">
+            Codex Atlanticus — Folio 1033r — Biblioteca Ambrosiana, Milan
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <h3 class="footer__title">Codex Atlanticus 2.0</h3>
+            <p class="footer__credits">
+                Un projet de documentaire interactif sur la préservation numérique du patrimoine
+            </p>
+            <p class="footer__credits">
+                Concept & Développement — Scrollytelling Expérimental
+            </p>
+            <p class="footer__year">© 2025 — Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         AUDIO ELEMENTS (Placeholders)
+         ============================================ -->
+
+    <!-- Ambient Sound -->
+    <audio id="ambientAudio" loop preload="none" data-placeholder="ambient-sound"
+        data-description="AUDIO: Ambiance Renaissance — Plume sur parchemin, crépitement de bougie, vent lointain"
+        data-format="MP3/OGG" data-duration="Loop 2-3min">
+        <!-- <source src="assets/audio/ambient-renaissance.mp3" type="audio/mpeg"> -->
+        <!-- <source src="assets/audio/ambient-renaissance.ogg" type="audio/ogg"> -->
+    </audio>
+
+    <!-- Chapter Narrations -->
+    <audio id="narration-heritage" preload="none" data-placeholder="narration-chapter-1"
+        data-description="AUDIO: Narration Chapitre I — L'Héritage Fragile (Voix FR, ton documentaire)"
+        data-format="MP3" data-duration="60-90s">
+        <!-- <source src="assets/audio/narration-heritage.mp3" type="audio/mpeg"> -->
+    </audio>
+
+    <audio id="narration-oais" preload="none" data-placeholder="narration-chapter-2"
+        data-description="AUDIO: Narration Chapitre II — La Forteresse Numérique (Voix FR, ton technique)"
+        data-format="MP3" data-duration="60-90s">
+        <!-- <source src="assets/audio/narration-oais.mp3" type="audio/mpeg"> -->
+    </audio>
+
+    <audio id="narration-ia" preload="none" data-placeholder="narration-chapter-3"
+        data-description="AUDIO: Narration Chapitre III — La Renaissance par l'IA (Voix FR, ton futuriste)"
+        data-format="MP3" data-duration="60-90s">
+        <!-- <source src="assets/audio/narration-ia.mp3" type="audio/mpeg"> -->
+    </audio>
+
+    <audio id="narration-future" preload="none" data-placeholder="narration-chapter-4"
+        data-description="AUDIO: Narration Chapitre IV — Mémoire et Éthique (Voix FR, ton réflexif)" data-format="MP3"
+        data-duration="60-90s">
+        <!-- <source src="assets/audio/narration-future.mp3" type="audio/mpeg"> -->
+    </audio>
+
+
+</body>
+
+</html>
+
+</html>
